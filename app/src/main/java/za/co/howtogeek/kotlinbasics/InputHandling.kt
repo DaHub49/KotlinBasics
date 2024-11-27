@@ -6,19 +6,26 @@ fun main(){
     return str.toIntOrNull() != null
 }
      */
+    // To check if a number is an Integer or not:
     fun isInteger(str: String): Boolean {
         return str.toIntOrNull() != null
     }
 
-    println("Please enter a number, then press <Enter>")
-    val inputString = readln()
-    val inputNumber = inputString
-    if (!isInteger(inputNumber)) {
+    val multiplier = 5
+    var inputNumber = -1
+
+    println("Please enter a whole number, then press <Enter>")
+    var inputString = readln()
+    if (!isInteger(inputString)) {
         do {
-            println("Please enter a number, then press <Enter>")
-            val inputString = readln()
-            val inputNumber = inputString
-        } while (!isInteger(inputNumber))
+            println("Please enter a whole number, then press <Enter>")
+            inputString = readln()
+        } while (!isInteger(inputString))
     }
+    inputNumber = inputString.toInt()
+
+    var multiplied = inputNumber*multiplier
+
+    println("Result of $inputNumber * $multiplier = $multiplied")
 
 }
