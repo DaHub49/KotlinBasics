@@ -1,7 +1,9 @@
 package za.co.howtogeek.kotlinbasics.day4
 
+val fruitList = mutableListOf("Orange", "Naartjie", "Apple", "Banana", "Grape")
+
 fun main() {
-    val fruitList = mutableListOf("Orange", "Naartjie", "Apple", "Banana", "Grape")
+
     println(fruitList)
 
     // Add anothr fruit:

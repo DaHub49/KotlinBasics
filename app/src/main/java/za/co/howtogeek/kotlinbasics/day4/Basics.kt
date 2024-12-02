@@ -1,12 +1,12 @@
 package za.co.howtogeek.kotlinbasics.day4
 
+// Immutable list (listOf(values) cannot be changed):
+//val shoppingList = listOf("Processor", "RAM", "Graphics Card", "SSD")
+
+// Mutable List (can be modified):
+val shoppingList = mutableListOf("Processor", "RAM", "Graphics Card RTX 3060", "SSD")
+
 fun main() {
-
-    // Immutable list (listOf(values) cannot be changed):
-    //val shoppingList = listOf("Processor", "RAM", "Graphics Card", "SSD")
-
-    // Mutable List (can be modified):
-    val shoppingList = mutableListOf("Processor", "RAM", "Graphics Card RTX 3060", "SSD")
     println(shoppingList)
     println("shoppingList.size: ${shoppingList.size}\n")
 
@@ -57,6 +57,27 @@ fun main() {
     else
         println("No RAM in the list")
 
-    println("shoppingList: $shoppingList")
+    //println("shoppingList: $shoppingList")
+    forLoopDemo(shoppingList.size)
 
+} // main()
+
+
+
+fun forLoopDemo(numIterations: Int = 0){
+    if (numIterations == 0)
+        println("ERROR! Need data to loop through.")
+
+    println("\nforLoopDemo:")
+
+    for (customListItem in shoppingList) {
+        println(customListItem)
+        if (customListItem == "RAM") {
+            println("About to remove last element:")
+            shoppingList.removeLast()
+            break
+        }
+    }
+
+    println(shoppingList)
 }
