@@ -79,5 +79,21 @@ fun forLoopDemo(numIterations: Int = 0){
         }
     }
 
+    //for loop with index:
+   //type -> "for(item[index] in 0 until shoppingList.size)", and get result:
+    for (index in 0 until shoppingList.size){
+        println("item ${shoppingList[index]} is at $index")
+    }
+
+    for (index in 0 until 4){ // The value 4 isn't included in the loop, because it's only less than.
+        println("item ${shoppingList[index]} is at $index")
+    }
+
+    // To include the final index, use a range in the for loop:
+    for (index in 0..4) { //includes 0 all the way to 4
+
+    }
+
+
     println(shoppingList)
 }
