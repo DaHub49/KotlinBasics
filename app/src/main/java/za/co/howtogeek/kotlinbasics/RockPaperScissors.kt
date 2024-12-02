@@ -41,6 +41,8 @@ fun main(){
             playerChoice==3 && computerChoice==2 -> "Player wins!"
             // Call to end game
             playerChoice==4 -> "Quiters never win! Computer win this round."
+
+            //  For when not one of the above mentioned
             else -> "Computer wins..."
         }
 
