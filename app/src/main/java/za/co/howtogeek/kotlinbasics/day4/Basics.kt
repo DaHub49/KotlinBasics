@@ -46,4 +46,11 @@ fun main() {
             "shoppingList[2]: ${shoppingList[2]}, " +
             "shoppingList[3]: ${shoppingList[3]}\n")
 
+    // Using List.set top replace elements:
+    shoppingList.set(1, "Water Cooling")
+    println("shoppingList[0]: ${shoppingList[0]}, " +
+            "shoppingList[1]: ${shoppingList[1]}, " +
+            "shoppingList[2]: ${shoppingList[2]}, " +
+            "shoppingList[3]: ${shoppingList[3]}\n")
+
 }
