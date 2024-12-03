@@ -5,6 +5,9 @@ fun main(){
 
     for (index in 0 until numbers.size){
         println("index: $index, value: ${numbers.get(index)}")
+        println("Doubling each element ->")
+        numbers.set(index, numbers.get(index)*2)
+        println("numbers.get(index): ${numbers.get(index)}")
     }
 }
 
