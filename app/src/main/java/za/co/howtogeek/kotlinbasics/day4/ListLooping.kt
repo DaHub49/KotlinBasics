@@ -9,6 +9,8 @@ fun main(){
         numbers.set(index, numbers.get(index)*2)
         println("numbers.get(index): ${numbers.get(index)}")
     }
+
+    println(numbers)
 }
 
 
