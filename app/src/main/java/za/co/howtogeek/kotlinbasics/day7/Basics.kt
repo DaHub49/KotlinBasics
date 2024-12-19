@@ -2,7 +2,7 @@ package za.co.howtogeek.kotlinbasics.day7
 
 fun main(){
     val numbers = listOf(1,2,3)
-    // maps iterate through lists and
+    // maps iterate through lists and?
     val doubled = numbers.map { it * 2 }
 
     println("doubled: $doubled")
