@@ -1,15 +1,16 @@
 package za.co.howtogeek.kotlinbasics.day7
 
 fun main(){
+    /*
     val numbers = listOf(1,2,3)
-    // maps iterate through lists and allows you to globally edit each element.
     val doubled = numbers.map { it * 2 }
+    println("numbers doubled: $doubled")
+     */
 
-    println("doubled: $doubled")
-
-    //String map:
-    val words = listOf("as", "bas", "note")
-
-    val wordsss = words.map { it + 's' }
-    println("wordsss: $wordsss")
+    val blueRoseVase = Vase(colour = "Blue", design = "Rose")
+    val redRoseVase = blueRoseVase.copy(colour = "Red")
+    println(blueRoseVase)
+    println(redRoseVase)
 }
+
+data class Vase(val colour: String, val design: String)
