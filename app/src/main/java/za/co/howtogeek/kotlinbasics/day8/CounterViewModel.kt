@@ -1,16 +1,15 @@
 package za.co.howtogeek.kotlinbasics.day8
 
 
-import androidx.compose.runtime.State
-import androidx.compose.runtime.asIntState
 import androidx.lifecycle.ViewModel
-import androidx.compose.runtime.mutableStateOf
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 
 class CounterViewModel: ViewModel(){
 
     // the "_" prefix indicates that the variable is private
-    private var _count = mutableStateOf(0)
-    val count: State<Int> = _count.asIntState()
+    private var _count = MutableStateFlow(0)
+    val count: StateFlow<Int> = _count
     //val count: State<Int> = _count.asIntState()
 
 
