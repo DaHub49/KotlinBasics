@@ -5,6 +5,10 @@ import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
+/*
+Save checkpoint
+ */
+
 class CounterViewModel: ViewModel(){
 
     // the "_" prefix indicates that the variable is private
